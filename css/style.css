@@ -2083,7 +2083,7 @@ hr {
 .user-login .block .content {
   flex-basis: 100%;
   align-self: center;
-  padding: 50px;
+  padding: 25px;
   border: 1px solid #cccccc;
   border-radius: 4px;
 }
@@ -2217,6 +2217,11 @@ hr {
   .google-map #map_canvas {
     height: 350px;
   }
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */
