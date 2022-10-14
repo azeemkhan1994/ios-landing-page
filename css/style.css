@@ -164,6 +164,11 @@ a:hover {
   background-size: cover;
 }
 
+.bg-2 {
+  background: url(../images/background/promo-video-back.jpg) fixed no-repeat;
+  background-size: cover;
+}
+
 .bg-coming-soon {
   background: url(../images/background/comming-soon.jpg) fixed no-repeat;
   background-size: cover;
@@ -404,7 +409,12 @@ button:focus,
 
 .main-nav {
   background: #fff;
-  z-index: 1;
+  z-index: 3;
+}
+
+.black-hover:hover {
+  background-color: #000 !important;
+  color: #fff !important;
 }
 
 .main-nav .navbar-brand {
@@ -597,9 +607,9 @@ button:focus,
   margin-bottom: 20px;
 }
 
-.footer-main .block img #small-Apps {
+/* .footer-main .block img #small-Apps {
   fill: red;
-}
+} */
 
 .footer-main .block ul.social-icon li a {
   text-decoration: none;
