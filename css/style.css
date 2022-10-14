@@ -176,12 +176,16 @@ a:hover {
 }
 
 .section {
-  padding: 100px 0;
+  padding: 30px 0;
 }
 
 .section-title {
   text-align: center;
   margin-bottom: 80px;
+}
+
+.fs-7 {
+  font-size: 0.7rem !important;
 }
 
 .section-title h2 {
@@ -1201,7 +1205,7 @@ button:focus,
 }
 
 .pull-top {
-  margin-top: -100px;
+  margin-top: -20px;
 }
 
 .shapes-container {
