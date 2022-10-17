@@ -32,10 +32,29 @@
 
 	<!-- CUSTOM CSS -->
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+	<style>
+		.nav-link-hover:hover {
+			color: #0d6efd !important;
+		}
+
+		.nav-link-hover:hover .small-text {
+			color: #000 !important;
+		}
+
+		.fs-30 {
+			font-size: 30px !important;
+		}
+
+		.pt-100 {
+			padding-top: 100px !important;
+		}
+	</style>
 </head>
 
+
 <body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
-	<nav class="navbar main-nav navbar-expand-lg px-2 px-sm-0 py-2 py-lg-0">
+	<nav class="navbar main-nav navbar-expand-lg px-2 px-sm-0 py-2 py-lg-0 fixed-top shadow">
 		<div class="container my-2">
 			<a class="navbar-brand" href="index.html"><img src="images/logo-black.svg" height="60" width="auto"
 					alt="logo" /></a>
@@ -46,11 +65,11 @@
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav ms-auto">
 					<li class="nav-item">
-						<a class="nav-link" style="line-height: 1;" href="tel:8882279908">
+						<a class="nav-link nav-link-hover" style="line-height: 1;" href="tel:8882279908">
 							<div class="d-flex align-items-center">
 								<i class="fa-sharp fa-solid fa-phone mt-2 me-3" style="font-size: 1.6rem;"></i>
 								<div class="text-start">
-									<span class="text-primary fs-7 fw-bold">GIVE US A CALL</span>
+									<span class="text-primary fs-7 fw-bold small-text">GIVE US A CALL</span>
 									<br />
 									<span>888-227-9908</span>
 								</div>
@@ -58,11 +77,12 @@
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" style="line-height: 1;" href="mailto:info@pebtechsolutions.com">
+						<a class="nav-link nav-link-hover" style="line-height: 1;"
+							href="mailto:info@pebtechsolutions.com">
 							<div class="d-flex align-items-center">
 								<i class="fa-sharp fa-solid fa-envelope mt-2 me-3" style="font-size: 1.6rem;"></i>
 								<div class="text-start">
-									<span class="text-primary fs-7 fw-bold">SEND US A MAIL</span>
+									<span class="text-primary fs-7 fw-bold small-text">SEND US A MAIL</span>
 									<br />
 									<span class="text-lowercase">info@pebtechsolutions.com</span>
 								</div>
@@ -83,7 +103,7 @@
 	<!--====================================
 =            Hero Section            =
 =====================================-->
-	<section class="section gradient-banner-00 bg-2 ios-logo-00">
+	<section class="section gradient-banner-00 bg-2 ios-logo-00 pt-100">
 		<div class="shapes-container">
 			<div class="shape" data-aos="fade-down-left" data-aos-duration="1500" data-aos-delay="100"></div>
 			<div class="shape" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100"></div>
@@ -107,18 +127,32 @@
 				<div class="row align-items-center">
 					<div class="col-md-6 order-2 order-md-1 text-center text-md-start">
 						<h1 class="text-white fw-bold mb-4">
-							We Works Passionately With iOS Mobile App Development
+							Acceralate Technology For The Digital Future
 						</h1>
 						<p class="text-white mb-5">
-							We build superior digital apps and empower the user experiences
-							across the mobile app world.
+							We build customize iOS Apps and empower the user experiences
+							Globally.
+							<br> Our innovation combine with expertise enables the Digital transformation
 						</p>
-						<a data-bs-toggle="modal" data-bs-target="#formModal" class="btn btn-main-md blue-hover">Connect
-							With Our
-							Expert</a>
+						<a data-bs-toggle="modal" data-bs-target="#formModal" class="btn btn-main-md blue-hover">
+							Find out how ?
+						</a>
 					</div>
 					<div class="col-md-6 text-center order-1 order-md-2" data-aos="fade-left">
-						<img class="img-fluid" src="images/mobile.png" alt="screenshot" />
+
+						<div class="single-item mx-auto" style="height: auto; max-width: 375px;">
+							<div class="">
+								<img class="img-fluid" src="images/feature/crazy-frog-mobile-02.png" alt="screenshot" />
+							</div>
+							<div>
+								<img class="img-fluid" src="images/feature/gbm-mobile-00.png" alt="screenshot" />
+							</div>
+							<div>
+								<img class="img-fluid" src="images/feature/bmoty-mobile-01.png" alt="screenshot" />
+							</div>
+						</div>
+
+						<!-- <img class="img-fluid" src="images/mobile.png" alt="screenshot" /> -->
 					</div>
 				</div>
 			</div>
@@ -157,7 +191,7 @@
 					<div data-bs-toggle="modal" data-bs-target="#formModal"
 						class="shadow bg-white py-3 px-4 h-100 d-flex align-items-center card-00">
 						<h3 class="h3">
-							Maintenance For Existing iOS Application
+							Upgrade iOS Application
 						</h3>
 					</div>
 				</div>
@@ -174,6 +208,14 @@
 			<div class="row no-gutters">
 				<div class="col-lg-6 align-self-center">
 					<!-- Feature Image -->
+					<div class="p-3">
+						<h2>
+							Visual Tinter
+						</h2>
+						Visual Tinter is an tint simulator app that will help your envision their vehicle with the
+						perfect tint and make you stand apart from your competition raising sales to a
+						new level
+					</div>
 					<div class="service-thumb left" data-aos="fade-right">
 						<img class="img-fluid" src="images/feature/iphone-ipad.png" alt="iphone-ipad" />
 					</div>
@@ -183,7 +225,7 @@
 						<div class="block">
 							<div class="content text-center">
 								<div class="title-text">
-									<h2 class="">Tell us about your iOS app</h2>
+									<h2 class="fs-30">Tell us about your iOS app idea</h2>
 								</div>
 								<form>
 									<div class="row g-3">
@@ -220,7 +262,10 @@
 													<option value="UI/Ux Design">UI/Ux Design</option>
 													<option value="Support and Maintenance">Support and Maintenance
 													</option>
-													<option value="Support and Maintenance">Hire a Resource</option>
+													<option value="Hire a iOS Developer">Hire iOS Developer
+													</option>
+													<option value="Other">Other
+													</option>
 												</select>
 											</div>
 										</div>
@@ -246,7 +291,7 @@
 
 										<div>
 											<button type="submit" class="btn btn-main-md black-hover">
-												Talk To Our Team
+												Talk To Our Expert
 											</button>
 										</div>
 
@@ -268,6 +313,7 @@
 					<div class="feature-content">
 						<!-- Feature Title -->
 						<h2>
+							<img src="images/badge.png" alt="" srcset="" />
 							Fujairah Municipality
 						</h2>
 						<!-- Feature Description -->
@@ -276,7 +322,7 @@
 							channels and mediums for individuals and businesses segments living in Fujairah.
 						</p>
 						<a data-bs-toggle="modal" data-bs-target="#formModal" class="btn btn-main-md black-hover">
-							Connect With Our Expert
+							Get in touch
 						</a>
 					</div>
 				</div>
@@ -307,6 +353,7 @@
 					<div class="feature-content">
 						<!-- Feature Title -->
 						<h2>
+							<img src="images/badge.png" alt="" srcset="" />
 							100 Family Days Scratch &amp; Win
 						</h2>
 						<!-- Feature Description -->
@@ -317,7 +364,7 @@
 							Days.
 						</p>
 						<a data-bs-toggle="modal" data-bs-target="#formModal" class="btn btn-main-md black-hover">
-							Connect With Our Expert
+							Estimate Project
 						</a>
 					</div>
 				</div>
@@ -333,6 +380,7 @@
 					<div class="feature-content">
 						<!-- Feature Title -->
 						<h2>
+							<img src="images/badge.png" alt="" srcset="" />
 							Ministry of Presidental Affairs
 						</h2>
 						<!-- Feature Description -->
@@ -342,7 +390,7 @@
 							of the United Arab Emirates.
 						</p>
 						<a data-bs-toggle="modal" data-bs-target="#formModal" class="btn btn-main-md black-hover">
-							Connect With Our Expert
+							Lets talk With Expert
 						</a>
 					</div>
 				</div>
@@ -371,6 +419,7 @@
 					<div class="feature-content">
 						<!-- Feature Title -->
 						<h2>
+							<img src="images/badge.png" alt="" srcset="" />
 							GBM - Gulf Business Machines
 						</h2>
 						<!-- Feature Description -->
@@ -379,7 +428,7 @@
 							Technology and Services, IT Services, Enterprise Software areas.
 						</p>
 						<a data-bs-toggle="modal" data-bs-target="#formModal" class="btn btn-main-md black-hover">
-							Connect With Our Expert
+							Get in touch
 						</a>
 					</div>
 
@@ -396,6 +445,7 @@
 					<div class="feature-content">
 						<!-- Feature Title -->
 						<h2>
+							<img src="images/badge.png" alt="" srcset="" />
 							Shaheen Air
 						</h2>
 						<!-- Feature Description -->
@@ -432,6 +482,7 @@
 					<div class="feature-content">
 						<!-- Feature Title -->
 						<h2>
+							<img src="images/badge.png" alt="" srcset="" />
 							bMoty.com
 						</h2>
 						<!-- Feature Description -->
@@ -440,7 +491,7 @@
 							sellers to connect with millions of customers. where you can take control of what you spend.
 						</p>
 						<a data-bs-toggle="modal" data-bs-target="#formModal" class="btn btn-main-md black-hover">
-							Connect With Our Expert
+							Estimate Project
 						</a>
 					</div>
 				</div>
@@ -516,7 +567,7 @@
 						<div class="block">
 							<div class="content text-center">
 								<div class="title-text">
-									<h2 class="text-white">Tell us about your app</h2>
+									<h2 class="text-white fs-30">Tell us about your app idea</h2>
 								</div>
 								<form>
 									<div class="row g-3">
@@ -551,9 +602,10 @@
 													<option value="iOS Game Development">iOS Game Development
 													</option>
 													<option value="UI/Ux Design">UI/Ux Design</option>
-													<option value="Support and Maintenance">Support and Maintenance
+													<option value="Hire a iOS Developer">Hire iOS Developer
 													</option>
-													<option value="Support and Maintenance">Hire a Resource</option>
+													<option value="Other">Other
+													</option>
 												</select>
 											</div>
 										</div>
@@ -578,7 +630,8 @@
 										<!-- hidden filed -->
 
 										<div>
-											<button class="btn btn-rounded-icon white-hover">Build Your App</button>
+											<button type="submit" class="btn btn-rounded-icon white-hover">Build Your
+												App</button>
 										</div>
 
 									</div>
@@ -599,8 +652,9 @@
 				<div class="col-lg-12">
 					<h1 class="text-white fw-bold">Let’s Talk Right Away</h1>
 					<p>
-						Collaborate with our digital design, development and marketing professionals to step-up
-						financial performance of your brand.
+						Enabling to build, transform and adapt digital Apps and empowering the user experience Globally
+						<!-- Collaborate with our digital design, development and marketing professionals to step-up
+						financial performance of your brand. -->
 					</p>
 				</div>
 			</div>
@@ -716,7 +770,7 @@
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content" style="border-radius: 0;">
 				<div class="modal-header px-3 py-2">
-					<h2 id="exampleModalLabel" class="m-0">Tell us about your app</h2>
+					<h2 id="exampleModalLabel" class="m-0 fs-30">Tell us about your app idea</h2>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
@@ -752,9 +806,10 @@
 										<option value="iOS Game Development">iOS Game Development
 										</option>
 										<option value="UI/Ux Design">UI/Ux Design</option>
-										<option value="Support and Maintenance">Support and Maintenance
+										<option value="Hire a iOS Developer">Hire iOS Developer
 										</option>
-										<option value="Support and Maintenance">Hire a Resource</option>
+										<option value="Other">Other
+										</option>
 									</select>
 								</div>
 							</div>
@@ -778,7 +833,9 @@
 							<!-- hidden filed -->
 
 							<div>
-								<a class="btn btn-main-md">Build Your App Now</a>
+								<button type="submit" class="btn btn-main-md black-hover">
+									Build Your App Now
+								</button>
 							</div>
 
 						</div>
@@ -797,6 +854,18 @@
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script type="text/javascript" src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
+
+	<script>
+		$('.single-item').slick({
+			dots: true,
+			infinite: true,
+			speed: 500,
+			fade: true,
+			cssEase: 'linear',
+			autoplay: true,
+			autoplaySpeed: 1500,
+		});
+	</script>
 </body>
 
 </html>
