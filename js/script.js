@@ -138,6 +138,42 @@
     //   }, 500);
     // });
 
+    // Fetch all the forms 
+    const forms = document.querySelectorAll("form");
+
+    // Loop over them 
+    Array.from(forms).forEach((form) => {
+      form.addEventListener(
+        "submit",
+        (event) => {
+          event.preventDefault();
+          event.stopPropagation();
+
+          if (form.checkValidity() === true) {
+            var formData = $(form).serialize();
+            $.ajax({
+              type: "POST",
+              url: "https://pebtechsolutions.com/best-ios-app-development-company-usa/send-email.php",
+              dataType: "json",
+              data: formData,
+              success: function (response) {
+                if (response.success) {
+                  form.reset();
+                  location.replace("https://pebtechsolutions.com/thankyou.html");
+                } else { }
+              },
+              error: function (xhr, status, error) {
+                console.log(xhr);
+              },
+            });
+          }
+
+          return false;
+        },
+        false
+      );
+    });
+
   });
 
 })(jQuery);
