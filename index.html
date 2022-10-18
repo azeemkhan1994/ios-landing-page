@@ -80,10 +80,30 @@
 		gtag('config', 'AW-10979540214');
 
 	</script>
+
+	<style>
+		.loading {
+			background-color: #fff;
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			z-index: 999999;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	</style>
 </head>
 
 
 <body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+
+	<div class="loading" id="loading-spinner">
+		<div class="spinner-border text-primary" role="status">
+			<span class="visually-hidden">Loading...</span>
+		</div>
+	</div>
+
 	<nav class="navbar main-nav navbar-expand-lg px-2 px-sm-0 py-2 py-lg-0 fixed-top shadow">
 		<div class="container my-2">
 			<a class="navbar-brand" href="index.html"><img src="images/logo-black.svg" height="60" width="auto"
@@ -909,6 +929,13 @@
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRRF4SC" height="0" width="0"
 			style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
+
+	<script>
+		window.addEventListener('DOMContentLoaded', () => {
+			console.log('DOM fully loaded and parsed');
+			$('#loading-spinner').css({ display: 'none' });
+		});
+	</script>
 </body>
 
 </html>
