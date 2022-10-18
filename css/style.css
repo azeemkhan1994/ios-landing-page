@@ -197,6 +197,22 @@ a:hover {
   overflow: hidden;
 }
 
+.nav-link-hover:hover {
+  color: #0d6efd !important;
+}
+
+.nav-link-hover:hover .small-text {
+  color: #000 !important;
+}
+
+.fs-30 {
+  font-size: 30px !important;
+}
+
+.pt-100 {
+  padding-top: 100px !important;
+}
+
 .ios-logo-00::after {
   content: '';
   background-image: url(../images/apple-icon.png);
