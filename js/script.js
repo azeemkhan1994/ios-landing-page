@@ -5,7 +5,8 @@
   // AOS
   // ----------------------------
   AOS.init({
-    once: true
+    once: true,
+    throttleDelay: 1500,
   });
 
 
