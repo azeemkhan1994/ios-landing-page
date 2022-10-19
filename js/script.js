@@ -169,7 +169,7 @@
               success: function (response) {
                 if (response.success) {
                   form.reset();
-                  location.replace("https://pebtechsolutions.com/thankyou.html");
+                  location.replace("https://pebtechsolutions.com/thank-you.html");
                 } else { }
               },
               error: function (xhr, status, error) {
